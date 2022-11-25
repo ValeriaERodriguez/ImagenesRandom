@@ -38,7 +38,7 @@ class ViewController: UIViewController {
             let button = UIButton()
             button.setTitle("Random", for: .normal)
             button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .purple
+            button.backgroundColor = .purple
             button.layer.cornerRadius = 6.0
         
             return button
@@ -49,7 +49,9 @@ class ViewController: UIViewController {
                               .systemBlue,
                               .systemGreen,
                               .systemOrange,
-                              .systemYellow]
+                              .systemYellow,
+                              .cyan,
+                              .lightGray]
  
 
     override func viewDidLoad() {
@@ -106,8 +108,7 @@ class ViewController: UIViewController {
          }
          imageView.image = UIImage(data: data)
          
-         imageView3.image = UIImage(data: data)
-         imageView4.image = UIImage(data: data)
+         
 
     }
     func getRandomPhoto2() {
@@ -118,8 +119,7 @@ class ViewController: UIViewController {
          }
          
          imageView2.image = UIImage(data: data)
-         imageView3.image = UIImage(data: data)
-         imageView4.image = UIImage(data: data)
+         
 
     }
     func getRandomPhoto3() {
